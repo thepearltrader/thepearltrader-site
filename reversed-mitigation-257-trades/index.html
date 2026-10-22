@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reversed Mitigation — All 257 Trades | The Pearl Trader</title>
+<style>body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;max-width:900px;margin:40px auto;padding:0 20px;color:#1a1a1a;line-height:1.55}table{border-collapse:collapse;width:100%;font-size:13px;margin:16px 0}th,td{border:1px solid #ccc;padding:4px 8px;text-align:right}th{background:#f2f2f2}td:first-child,th:first-child{text-align:left}code{background:#f2f2f2;padding:1px 4px}</style>
+</head><body>
+<h1>The Full 257-Trade List — Reversed ICT Mitigation Block (NQ)</h1>
+<p><strong>The Pearl Trader — Claim Check: &quot;The 92% Win-Rate Strategy That Falls Apart in One Question&quot;</strong></p>
+<p>This is the complete record behind the episode: every trade the frozen</p>
+<p>reversed-mitigation rules produced on NQ 1-minute data, scored hostile —</p>
+<p>1.25 points of cost per trade included in every result.</p>
+<h2>How to read it</h2>
+<li><strong>Direction</strong> is the REVERSED direction — the trade actually taken after</li>
+<p>  flipping the original ICT mitigation-block entry.</p>
+<li><strong>Fill</strong> = the block midpoint (CE). <strong>TP</strong> = the original trade&#x27;s stop</li>
+<p>  level (+1R). <strong>SL</strong> = fill −/+ 1R. Times are ET, 1-minute bars.</p>
+<li><strong>SAME-BAR flag</strong> = the trade resolved on its fill bar itself. On</li>
+<p>  1-minute data, whether the fill happened before the price move that</p>
+<p>  resolved the trade is unprovable for these trades — that flag is the</p>
+<p>  whole point of the episode.</p>
+<h2>The totals</h2>
+<li>257 trades: <strong>234 TP wins · 19 stop-outs · 4 time exits</strong></li>
+<li>Of the 234 wins, <strong>210 are SAME-BAR</strong> (fill and finish inside one</li>
+<p>  1-minute bar) and only <strong>24 resolved after the fill bar</strong></p>
+<li>The 47 trades nobody can argue with — the 24 clear wins, all 19</li>
+<p>  stop-outs, and all 4 time exits — net <strong>+0.28R total</strong></p>
+<li>Full-sample net as booked by the backtest: <strong>+189.60R</strong> — almost all of</li>
+<p>  it sitting in the same-bar pile the data cannot verify</p>
+<h2>Status of the strategy</h2>
+<p>It is labelled <strong>UNPROVEN</strong> on this channel. The out-of-sample test was</p>
+<p>94 trades (+0.778R, PF 11.19) against our standing bar of 100, and the</p>
+<p>idea was born from looking at a losing baseline — both facts stated in</p>
+<p>the episode. A frozen forward paper protocol (30 sim trades, market</p>
+<p>entry on the touch, so a target that prints before a fill can never be</p>
+<p>credited) is the arbiter. Pass = expectancy above +0.10R and profit</p>
+<p>factor over 1.2 at trade 30. Kill = expectancy at or below zero, or</p>
+<p>drawdown over 10R. The scoreboard is published whatever it says.</p>
+<hr>
+<h1>Reversed Mitigation — All 257 NQ Trades (frozen rules, hostile scoring)</h1>
+<p>Direction shown is the REVERSED direction (the trade the Sim101 strategy takes). Fill = block midpoint (CE).</p>
+<p>TP = original trade&#x27;s stop level (+1R). SL = fill -/+ 1R. Times are ET, 1-minute bars.</p>
+<p>SAME-BAR flag = the trade resolved on the fill bar itself (fill-vs-close order unprovable on 1-min data).</p>
+<p>Totals: 234 TP wins (210 same-bar, 24 after fill bar) · 19 SL · 4 time exits · net +189.60R (incl. 1.25-pt cost/trade).</p>
+<h2>Test window (last 94 — Feb 25 to Oct 14, 2026)</h2>
+<table><thead><tr><th>#</th><th>Date</th><th>Fill</th><th>Dir</th><th>Fill price</th><th>TP</th><th>SL</th><th>R (pts)</th><th>Exit</th><th>Result</th><th>Flag</th></tr></thead><tbody>
+<tr><td>1</td><td>2026-02-27</td><td>09:42</td><td>LONG</td><td>24,822.25</td><td>24,839.75</td><td>24,804.75</td><td>17.50</td><td>09:42</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>2</td><td>2026-03-02</td><td>09:52</td><td>LONG</td><td>24,823.75</td><td>24,852.25</td><td>24,795.25</td><td>28.50</td><td>09:52</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>3</td><td>2026-03-03</td><td>11:13</td><td>SHORT</td><td>24,590.12</td><td>24,565.75</td><td>24,614.50</td><td>24.38</td><td>11:13</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>4</td><td>2026-03-09</td><td>10:05</td><td>SHORT</td><td>24,475.62</td><td>24,458.00</td><td>24,493.25</td><td>17.62</td><td>10:05</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>5</td><td>2026-03-10</td><td>10:37</td><td>SHORT</td><td>25,066.75</td><td>25,051.50</td><td>25,082.00</td><td>15.25</td><td>10:39</td><td>SL -1.08R</td><td></td></tr>
+<tr><td>6</td><td>2026-03-11</td><td>09:43</td><td>LONG</td><td>25,081.12</td><td>25,093.75</td><td>25,068.50</td><td>12.62</td><td>09:43</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>7</td><td>2026-03-13</td><td>09:39</td><td>SHORT</td><td>24,680.75</td><td>24,660.00</td><td>24,701.50</td><td>20.75</td><td>09:41</td><td>SL -1.06R</td><td></td></tr>
+<tr><td>8</td><td>2026-03-17</td><td>09:40</td><td>LONG</td><td>25,053.75</td><td>25,062.75</td><td>25,044.75</td><td>9.00</td><td>09:40</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>9</td><td>2026-03-19</td><td>09:55</td><td>LONG</td><td>24,484.38</td><td>24,502.00</td><td>24,466.75</td><td>17.62</td><td>09:55</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>10</td><td>2026-03-24</td><td>10:07</td><td>SHORT</td><td>24,280.12</td><td>24,242.50</td><td>24,317.75</td><td>37.62</td><td>10:07</td><td>TP +0.97R</td><td>SAME-BAR</td></tr>
+<tr><td>11</td><td>2026-03-25</td><td>09:34</td><td>SHORT</td><td>24,463.00</td><td>24,447.25</td><td>24,478.75</td><td>15.75</td><td>09:34</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>12</td><td>2026-03-27</td><td>09:51</td><td>LONG</td><td>23,551.62</td><td>23,571.50</td><td>23,531.75</td><td>19.88</td><td>09:51</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>13</td><td>2026-03-30</td><td>10:12</td><td>SHORT</td><td>23,368.00</td><td>23,359.25</td><td>23,376.75</td><td>8.75</td><td>10:12</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>14</td><td>2026-03-31</td><td>09:44</td><td>LONG</td><td>23,418.00</td><td>23,434.50</td><td>23,401.50</td><td>16.50</td><td>09:44</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>15</td><td>2026-04-01</td><td>09:47</td><td>LONG</td><td>24,064.12</td><td>24,085.25</td><td>24,043.00</td><td>21.12</td><td>09:47</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>16</td><td>2026-04-02</td><td>09:51</td><td>SHORT</td><td>23,804.25</td><td>23,789.50</td><td>23,819.00</td><td>14.75</td><td>09:51</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>17</td><td>2026-04-06</td><td>10:05</td><td>LONG</td><td>24,281.25</td><td>24,298.75</td><td>24,263.75</td><td>17.50</td><td>10:05</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>18</td><td>2026-04-08</td><td>12:55</td><td>SHORT</td><td>25,151.38</td><td>25,141.25</td><td>25,161.50</td><td>10.12</td><td>12:59</td><td>TP +0.88R</td><td></td></tr>
+<tr><td>19</td><td>2026-04-09</td><td>09:51</td><td>LONG</td><td>25,035.50</td><td>25,052.25</td><td>25,018.75</td><td>16.75</td><td>09:51</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>20</td><td>2026-04-10</td><td>10:31</td><td>SHORT</td><td>25,357.62</td><td>25,345.75</td><td>25,369.50</td><td>11.88</td><td>10:32</td><td>SL -1.11R</td><td></td></tr>
+<tr><td>21</td><td>2026-04-13</td><td>09:48</td><td>SHORT</td><td>25,223.00</td><td>25,213.25</td><td>25,232.75</td><td>9.75</td><td>09:48</td><td>TP +0.87R</td><td>SAME-BAR</td></tr>
+<tr><td>22</td><td>2026-04-17</td><td>09:47</td><td>LONG</td><td>26,655.25</td><td>26,681.25</td><td>26,629.25</td><td>26.00</td><td>09:49</td><td>TP +0.95R</td><td></td></tr>
+<tr><td>23</td><td>2026-04-22</td><td>09:49</td><td>LONG</td><td>26,829.38</td><td>26,845.50</td><td>26,813.25</td><td>16.12</td><td>09:51</td><td>SL -1.08R</td><td></td></tr>
+<tr><td>24</td><td>2026-04-23</td><td>09:50</td><td>LONG</td><td>27,049.88</td><td>27,060.25</td><td>27,039.50</td><td>10.38</td><td>09:50</td><td>TP +0.88R</td><td>SAME-BAR</td></tr>
+<tr><td>25</td><td>2026-04-24</td><td>09:43</td><td>LONG</td><td>27,210.50</td><td>27,224.75</td><td>27,196.25</td><td>14.25</td><td>09:43</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>26</td><td>2026-04-27</td><td>09:44</td><td>SHORT</td><td>27,401.00</td><td>27,388.50</td><td>27,413.50</td><td>12.50</td><td>09:44</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>27</td><td>2026-04-28</td><td>10:36</td><td>LONG</td><td>27,092.12</td><td>27,116.25</td><td>27,068.00</td><td>24.12</td><td>10:36</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>28</td><td>2026-04-30</td><td>09:51</td><td>LONG</td><td>27,285.75</td><td>27,300.75</td><td>27,270.75</td><td>15.00</td><td>09:51</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>29</td><td>2026-05-01</td><td>10:36</td><td>LONG</td><td>27,767.00</td><td>27,781.75</td><td>27,752.25</td><td>14.75</td><td>10:36</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>30</td><td>2026-05-11</td><td>09:49</td><td>LONG</td><td>29,363.25</td><td>29,374.75</td><td>29,351.75</td><td>11.50</td><td>09:49</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>31</td><td>2026-05-12</td><td>09:56</td><td>LONG</td><td>29,172.25</td><td>29,201.75</td><td>29,142.75</td><td>29.50</td><td>09:56</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>32</td><td>2026-05-13</td><td>09:41</td><td>SHORT</td><td>29,250.25</td><td>29,233.50</td><td>29,267.00</td><td>16.75</td><td>09:41</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>33</td><td>2026-05-14</td><td>10:01</td><td>SHORT</td><td>29,612.88</td><td>29,600.75</td><td>29,625.00</td><td>12.12</td><td>10:01</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>34</td><td>2026-05-15</td><td>09:40</td><td>SHORT</td><td>29,223.50</td><td>29,188.50</td><td>29,258.50</td><td>35.00</td><td>09:40</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>35</td><td>2026-05-18</td><td>09:51</td><td>SHORT</td><td>29,226.75</td><td>29,199.75</td><td>29,253.75</td><td>27.00</td><td>09:52</td><td>SL -1.05R</td><td></td></tr>
+<tr><td>36</td><td>2026-05-20</td><td>09:44</td><td>SHORT</td><td>29,140.88</td><td>29,127.00</td><td>29,154.75</td><td>13.88</td><td>09:44</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>37</td><td>2026-05-21</td><td>09:39</td><td>LONG</td><td>29,205.88</td><td>29,238.00</td><td>29,173.75</td><td>32.12</td><td>09:40</td><td>TP +0.96R</td><td></td></tr>
+<tr><td>38</td><td>2026-05-22</td><td>09:42</td><td>LONG</td><td>29,620.50</td><td>29,645.25</td><td>29,595.75</td><td>24.75</td><td>09:42</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>39</td><td>2026-05-27</td><td>09:51</td><td>SHORT</td><td>30,043.75</td><td>30,027.75</td><td>30,059.75</td><td>16.00</td><td>09:51</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>40</td><td>2026-05-28</td><td>10:03</td><td>LONG</td><td>29,964.12</td><td>29,981.25</td><td>29,947.00</td><td>17.12</td><td>10:03</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>41</td><td>2026-05-29</td><td>10:16</td><td>LONG</td><td>30,425.00</td><td>30,434.50</td><td>30,415.50</td><td>9.50</td><td>10:16</td><td>TP +0.87R</td><td>SAME-BAR</td></tr>
+<tr><td>42</td><td>2026-06-01</td><td>09:52</td><td>LONG</td><td>30,389.88</td><td>30,412.50</td><td>30,367.25</td><td>22.62</td><td>09:52</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>43</td><td>2026-06-02</td><td>09:57</td><td>SHORT</td><td>30,570.75</td><td>30,557.75</td><td>30,583.75</td><td>13.00</td><td>09:57</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>44</td><td>2026-06-03</td><td>10:29</td><td>SHORT</td><td>30,721.25</td><td>30,704.75</td><td>30,737.75</td><td>16.50</td><td>10:29</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>45</td><td>2026-06-08</td><td>09:47</td><td>LONG</td><td>29,506.75</td><td>29,530.75</td><td>29,482.75</td><td>24.00</td><td>09:47</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>46</td><td>2026-06-15</td><td>09:39</td><td>LONG</td><td>30,673.62</td><td>30,692.25</td><td>30,655.00</td><td>18.62</td><td>09:39</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>47</td><td>2026-06-17</td><td>10:15</td><td>SHORT</td><td>30,462.25</td><td>30,439.75</td><td>30,484.75</td><td>22.50</td><td>10:15</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>48</td><td>2026-06-22</td><td>09:43</td><td>LONG</td><td>30,788.38</td><td>30,820.25</td><td>30,756.50</td><td>31.88</td><td>09:45</td><td>TP +0.96R</td><td></td></tr>
+<tr><td>49</td><td>2026-06-25</td><td>09:36</td><td>LONG</td><td>30,055.25</td><td>30,070.75</td><td>30,039.75</td><td>15.50</td><td>09:36</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>50</td><td>2026-06-26</td><td>09:36</td><td>SHORT</td><td>29,337.50</td><td>29,303.00</td><td>29,372.00</td><td>34.50</td><td>09:36</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>51</td><td>2026-06-29</td><td>09:41</td><td>SHORT</td><td>29,744.38</td><td>29,719.25</td><td>29,769.50</td><td>25.12</td><td>09:41</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>52</td><td>2026-06-30</td><td>09:42</td><td>SHORT</td><td>30,237.00</td><td>30,209.75</td><td>30,264.25</td><td>27.25</td><td>09:42</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>53</td><td>2026-07-01</td><td>09:45</td><td>LONG</td><td>30,112.38</td><td>30,137.25</td><td>30,087.50</td><td>24.88</td><td>09:45</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>54</td><td>2026-07-02</td><td>10:22</td><td>LONG</td><td>30,082.38</td><td>30,137.00</td><td>30,027.75</td><td>54.62</td><td>10:24</td><td>TP +0.98R</td><td></td></tr>
+<tr><td>55</td><td>2026-07-06</td><td>09:41</td><td>SHORT</td><td>29,920.75</td><td>29,902.00</td><td>29,939.50</td><td>18.75</td><td>09:41</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>56</td><td>2026-07-07</td><td>09:47</td><td>LONG</td><td>29,522.62</td><td>29,554.25</td><td>29,491.00</td><td>31.62</td><td>09:48</td><td>TP +0.96R</td><td></td></tr>
+<tr><td>57</td><td>2026-07-13</td><td>09:59</td><td>SHORT</td><td>29,638.75</td><td>29,610.50</td><td>29,667.00</td><td>28.25</td><td>09:59</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>58</td><td>2026-07-15</td><td>09:43</td><td>SHORT</td><td>29,876.50</td><td>29,858.75</td><td>29,894.25</td><td>17.75</td><td>09:43</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>59</td><td>2026-07-16</td><td>10:06</td><td>SHORT</td><td>29,448.25</td><td>29,425.25</td><td>29,471.25</td><td>23.00</td><td>10:06</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>60</td><td>2026-07-20</td><td>09:41</td><td>SHORT</td><td>29,156.50</td><td>29,145.50</td><td>29,167.50</td><td>11.00</td><td>09:41</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>61</td><td>2026-07-21</td><td>10:27</td><td>SHORT</td><td>29,206.38</td><td>29,186.50</td><td>29,226.25</td><td>19.88</td><td>10:27</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>62</td><td>2026-07-22</td><td>09:51</td><td>SHORT</td><td>29,197.88</td><td>29,177.25</td><td>29,218.50</td><td>20.62</td><td>09:51</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>63</td><td>2026-07-27</td><td>09:40</td><td>LONG</td><td>28,508.50</td><td>28,530.25</td><td>28,486.75</td><td>21.75</td><td>09:40</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>64</td><td>2026-07-28</td><td>11:18</td><td>SHORT</td><td>27,900.75</td><td>27,883.00</td><td>27,918.50</td><td>17.75</td><td>11:18</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>65</td><td>2026-07-29</td><td>09:39</td><td>LONG</td><td>27,864.50</td><td>27,892.75</td><td>27,836.25</td><td>28.25</td><td>09:39</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>66</td><td>2026-08-06</td><td>09:40</td><td>SHORT</td><td>29,430.75</td><td>29,412.75</td><td>29,448.75</td><td>18.00</td><td>09:40</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>67</td><td>2026-08-07</td><td>09:44</td><td>SHORT</td><td>29,793.62</td><td>29,773.75</td><td>29,813.50</td><td>19.88</td><td>09:44</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>68</td><td>2026-08-13</td><td>11:32</td><td>LONG</td><td>30,169.12</td><td>30,177.75</td><td>30,160.50</td><td>8.62</td><td>11:32</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>69</td><td>2026-08-14</td><td>10:05</td><td>SHORT</td><td>30,266.62</td><td>30,252.50</td><td>30,280.75</td><td>14.12</td><td>10:05</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>70</td><td>2026-08-17</td><td>09:42</td><td>SHORT</td><td>30,230.00</td><td>30,220.50</td><td>30,239.50</td><td>9.50</td><td>09:42</td><td>TP +0.87R</td><td>SAME-BAR</td></tr>
+<tr><td>71</td><td>2026-08-18</td><td>09:38</td><td>SHORT</td><td>29,732.62</td><td>29,709.75</td><td>29,755.50</td><td>22.88</td><td>09:38</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>72</td><td>2026-08-19</td><td>10:07</td><td>LONG</td><td>29,440.50</td><td>29,474.75</td><td>29,406.25</td><td>34.25</td><td>10:07</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>73</td><td>2026-08-25</td><td>09:41</td><td>SHORT</td><td>29,364.38</td><td>29,352.25</td><td>29,376.50</td><td>12.12</td><td>09:41</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>74</td><td>2026-08-26</td><td>10:16</td><td>LONG</td><td>29,231.88</td><td>29,257.25</td><td>29,206.50</td><td>25.38</td><td>10:18</td><td>TP +0.95R</td><td></td></tr>
+<tr><td>75</td><td>2026-08-27</td><td>09:40</td><td>SHORT</td><td>29,502.38</td><td>29,484.50</td><td>29,520.25</td><td>17.88</td><td>09:41</td><td>SL -1.07R</td><td></td></tr>
+<tr><td>76</td><td>2026-08-28</td><td>10:06</td><td>LONG</td><td>29,577.00</td><td>29,591.50</td><td>29,562.50</td><td>14.50</td><td>10:06</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>77</td><td>2026-09-02</td><td>09:49</td><td>LONG</td><td>29,048.50</td><td>29,060.75</td><td>29,036.25</td><td>12.25</td><td>09:49</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>78</td><td>2026-09-08</td><td>09:51</td><td>LONG</td><td>29,484.50</td><td>29,502.25</td><td>29,466.75</td><td>17.75</td><td>09:51</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>79</td><td>2026-09-09</td><td>09:47</td><td>SHORT</td><td>29,488.88</td><td>29,473.75</td><td>29,504.00</td><td>15.12</td><td>09:47</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>80</td><td>2026-09-10</td><td>09:51</td><td>LONG</td><td>29,121.12</td><td>29,137.50</td><td>29,104.75</td><td>16.38</td><td>09:51</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>81</td><td>2026-09-11</td><td>09:40</td><td>LONG</td><td>29,363.00</td><td>29,379.00</td><td>29,347.00</td><td>16.00</td><td>09:40</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>82</td><td>2026-09-14</td><td>10:01</td><td>SHORT</td><td>29,033.12</td><td>29,020.25</td><td>29,046.00</td><td>12.88</td><td>10:01</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>83</td><td>2026-09-15</td><td>10:06</td><td>LONG</td><td>29,089.25</td><td>29,102.75</td><td>29,075.75</td><td>13.50</td><td>10:06</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>84</td><td>2026-09-22</td><td>09:48</td><td>SHORT</td><td>30,921.12</td><td>30,914.50</td><td>30,927.75</td><td>6.62</td><td>09:48</td><td>TP +0.81R</td><td>SAME-BAR</td></tr>
+<tr><td>85</td><td>2026-09-24</td><td>09:45</td><td>SHORT</td><td>30,594.88</td><td>30,583.00</td><td>30,606.75</td><td>11.88</td><td>09:45</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>86</td><td>2026-09-25</td><td>09:43</td><td>LONG</td><td>30,857.25</td><td>30,871.75</td><td>30,842.75</td><td>14.50</td><td>09:43</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>87</td><td>2026-09-29</td><td>09:52</td><td>SHORT</td><td>30,619.38</td><td>30,604.25</td><td>30,634.50</td><td>15.12</td><td>09:52</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>88</td><td>2026-10-01</td><td>09:35</td><td>LONG</td><td>30,759.12</td><td>30,784.25</td><td>30,734.00</td><td>25.12</td><td>09:35</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>89</td><td>2026-10-02</td><td>09:58</td><td>SHORT</td><td>31,187.00</td><td>31,175.50</td><td>31,198.50</td><td>11.50</td><td>09:58</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>90</td><td>2026-10-05</td><td>09:50</td><td>LONG</td><td>31,152.75</td><td>31,164.00</td><td>31,141.50</td><td>11.25</td><td>09:50</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>91</td><td>2026-10-06</td><td>10:29</td><td>LONG</td><td>31,500.00</td><td>31,515.00</td><td>31,485.00</td><td>15.00</td><td>10:29</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>92</td><td>2026-10-07</td><td>10:21</td><td>SHORT</td><td>31,261.38</td><td>31,247.00</td><td>31,275.75</td><td>14.38</td><td>10:24</td><td>time -0.74R</td><td></td></tr>
+<tr><td>93</td><td>2026-10-12</td><td>09:53</td><td>LONG</td><td>30,952.25</td><td>30,968.75</td><td>30,935.75</td><td>16.50</td><td>09:54</td><td>TP +0.92R</td><td></td></tr>
+<tr><td>94</td><td>2026-10-14</td><td>09:38</td><td>SHORT</td><td>30,566.88</td><td>30,535.75</td><td>30,598.00</td><td>31.12</td><td>09:38</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+</tbody></table>
+<h2>Train window (first 163 — Dec 2024 to Feb 2026)</h2>
+<table><thead><tr><th>#</th><th>Date</th><th>Fill</th><th>Dir</th><th>Fill price</th><th>TP</th><th>SL</th><th>R (pts)</th><th>Exit</th><th>Result</th><th>Flag</th></tr></thead><tbody>
+<tr><td>1</td><td>2024-12-12</td><td>09:50</td><td>LONG</td><td>21,931.38</td><td>21,937.00</td><td>21,925.75</td><td>5.62</td><td>09:50</td><td>TP +0.78R</td><td>SAME-BAR</td></tr>
+<tr><td>2</td><td>2024-12-13</td><td>10:26</td><td>LONG</td><td>22,087.00</td><td>22,095.75</td><td>22,078.25</td><td>8.75</td><td>10:26</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>3</td><td>2024-12-16</td><td>09:42</td><td>LONG</td><td>22,200.50</td><td>22,207.25</td><td>22,193.75</td><td>6.75</td><td>09:42</td><td>TP +0.81R</td><td>SAME-BAR</td></tr>
+<tr><td>4</td><td>2024-12-17</td><td>10:30</td><td>SHORT</td><td>22,273.00</td><td>22,261.00</td><td>22,285.00</td><td>12.00</td><td>10:30</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>5</td><td>2024-12-18</td><td>09:40</td><td>SHORT</td><td>22,256.88</td><td>22,248.75</td><td>22,265.00</td><td>8.12</td><td>09:40</td><td>TP +0.85R</td><td>SAME-BAR</td></tr>
+<tr><td>6</td><td>2024-12-19</td><td>09:44</td><td>LONG</td><td>21,595.88</td><td>21,624.00</td><td>21,567.75</td><td>28.12</td><td>09:44</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>7</td><td>2024-12-23</td><td>09:56</td><td>SHORT</td><td>21,624.75</td><td>21,610.50</td><td>21,639.00</td><td>14.25</td><td>09:56</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>8</td><td>2024-12-26</td><td>09:48</td><td>LONG</td><td>21,968.00</td><td>21,980.25</td><td>21,955.75</td><td>12.25</td><td>09:48</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>9</td><td>2024-12-27</td><td>10:51</td><td>SHORT</td><td>21,608.88</td><td>21,586.25</td><td>21,631.50</td><td>22.62</td><td>11:01</td><td>TP +0.94R</td><td></td></tr>
+<tr><td>10</td><td>2024-12-31</td><td>10:27</td><td>SHORT</td><td>21,460.88</td><td>21,433.00</td><td>21,488.75</td><td>27.88</td><td>10:28</td><td>TP +0.96R</td><td></td></tr>
+<tr><td>11</td><td>2025-01-03</td><td>10:04</td><td>SHORT</td><td>21,423.00</td><td>21,411.25</td><td>21,434.75</td><td>11.75</td><td>10:04</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>12</td><td>2025-01-06</td><td>09:44</td><td>LONG</td><td>21,774.75</td><td>21,783.25</td><td>21,766.25</td><td>8.50</td><td>09:44</td><td>TP +0.85R</td><td>SAME-BAR</td></tr>
+<tr><td>13</td><td>2025-01-07</td><td>09:58</td><td>LONG</td><td>21,712.00</td><td>21,729.00</td><td>21,695.00</td><td>17.00</td><td>09:58</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>14</td><td>2025-01-10</td><td>10:49</td><td>SHORT</td><td>21,121.88</td><td>21,105.75</td><td>21,138.00</td><td>16.12</td><td>10:49</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>15</td><td>2025-01-13</td><td>09:43</td><td>SHORT</td><td>20,772.00</td><td>20,758.25</td><td>20,785.75</td><td>13.75</td><td>09:43</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>16</td><td>2025-01-14</td><td>09:52</td><td>LONG</td><td>21,035.88</td><td>21,053.75</td><td>21,018.00</td><td>17.88</td><td>09:52</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>17</td><td>2025-01-16</td><td>11:08</td><td>SHORT</td><td>21,459.88</td><td>21,445.50</td><td>21,474.25</td><td>14.38</td><td>11:09</td><td>SL -1.09R</td><td></td></tr>
+<tr><td>18</td><td>2025-01-21</td><td>09:53</td><td>LONG</td><td>21,598.62</td><td>21,608.00</td><td>21,589.25</td><td>9.38</td><td>09:53</td><td>TP +0.87R</td><td>SAME-BAR</td></tr>
+<tr><td>19</td><td>2025-01-24</td><td>10:15</td><td>LONG</td><td>22,006.62</td><td>22,013.75</td><td>21,999.50</td><td>7.12</td><td>10:15</td><td>TP +0.82R</td><td>SAME-BAR</td></tr>
+<tr><td>20</td><td>2025-01-27</td><td>09:52</td><td>SHORT</td><td>21,314.00</td><td>21,302.50</td><td>21,325.50</td><td>11.50</td><td>09:52</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>21</td><td>2025-01-28</td><td>09:51</td><td>SHORT</td><td>21,224.62</td><td>21,211.75</td><td>21,237.50</td><td>12.88</td><td>09:51</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>22</td><td>2025-01-29</td><td>10:02</td><td>SHORT</td><td>21,551.12</td><td>21,535.00</td><td>21,567.25</td><td>16.12</td><td>10:03</td><td>TP +0.92R</td><td></td></tr>
+<tr><td>23</td><td>2025-02-03</td><td>09:45</td><td>LONG</td><td>21,242.00</td><td>21,258.50</td><td>21,225.50</td><td>16.50</td><td>09:45</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>24</td><td>2025-02-10</td><td>09:51</td><td>LONG</td><td>21,756.88</td><td>21,770.00</td><td>21,743.75</td><td>13.12</td><td>09:51</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>25</td><td>2025-02-14</td><td>10:02</td><td>LONG</td><td>22,100.50</td><td>22,110.25</td><td>22,090.75</td><td>9.75</td><td>10:02</td><td>TP +0.87R</td><td>SAME-BAR</td></tr>
+<tr><td>26</td><td>2025-02-19</td><td>09:40</td><td>LONG</td><td>22,182.88</td><td>22,193.50</td><td>22,172.25</td><td>10.62</td><td>09:40</td><td>TP +0.88R</td><td>SAME-BAR</td></tr>
+<tr><td>27</td><td>2025-02-25</td><td>09:39</td><td>SHORT</td><td>21,374.38</td><td>21,351.00</td><td>21,397.75</td><td>23.38</td><td>09:39</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>28</td><td>2025-02-26</td><td>09:48</td><td>SHORT</td><td>21,260.88</td><td>21,247.50</td><td>21,274.25</td><td>13.38</td><td>09:48</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>29</td><td>2025-02-27</td><td>09:38</td><td>LONG</td><td>21,337.88</td><td>21,355.50</td><td>21,320.25</td><td>17.62</td><td>09:39</td><td>SL -1.07R</td><td></td></tr>
+<tr><td>30</td><td>2025-03-04</td><td>09:42</td><td>LONG</td><td>20,289.00</td><td>20,318.25</td><td>20,259.75</td><td>29.25</td><td>09:42</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>31</td><td>2025-03-05</td><td>09:54</td><td>LONG</td><td>20,329.88</td><td>20,346.25</td><td>20,313.50</td><td>16.38</td><td>09:54</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>32</td><td>2025-03-06</td><td>09:47</td><td>SHORT</td><td>20,284.12</td><td>20,263.25</td><td>20,305.00</td><td>20.88</td><td>09:47</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>33</td><td>2025-03-07</td><td>09:39</td><td>SHORT</td><td>20,103.75</td><td>20,080.75</td><td>20,126.75</td><td>23.00</td><td>09:39</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>34</td><td>2025-03-10</td><td>09:41</td><td>SHORT</td><td>19,872.88</td><td>19,848.00</td><td>19,897.75</td><td>24.88</td><td>09:44</td><td>SL -1.05R</td><td></td></tr>
+<tr><td>35</td><td>2025-03-11</td><td>10:00</td><td>SHORT</td><td>19,587.00</td><td>19,574.75</td><td>19,599.25</td><td>12.25</td><td>10:00</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>36</td><td>2025-03-12</td><td>09:52</td><td>SHORT</td><td>19,710.50</td><td>19,686.00</td><td>19,735.00</td><td>24.50</td><td>09:52</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>37</td><td>2025-03-13</td><td>10:24</td><td>SHORT</td><td>19,543.62</td><td>19,525.00</td><td>19,562.25</td><td>18.62</td><td>10:24</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>38</td><td>2025-03-14</td><td>09:57</td><td>LONG</td><td>19,556.88</td><td>19,565.25</td><td>19,548.50</td><td>8.38</td><td>09:57</td><td>TP +0.85R</td><td>SAME-BAR</td></tr>
+<tr><td>39</td><td>2025-03-19</td><td>09:53</td><td>SHORT</td><td>19,799.62</td><td>19,784.25</td><td>19,815.00</td><td>15.38</td><td>09:54</td><td>SL -1.08R</td><td></td></tr>
+<tr><td>40</td><td>2025-03-20</td><td>12:29</td><td>LONG</td><td>19,874.00</td><td>19,895.00</td><td>19,853.00</td><td>21.00</td><td>12:29</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>41</td><td>2025-03-21</td><td>10:10</td><td>LONG</td><td>19,675.12</td><td>19,687.50</td><td>19,662.75</td><td>12.38</td><td>10:10</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>42</td><td>2025-03-25</td><td>09:40</td><td>SHORT</td><td>20,413.12</td><td>20,404.50</td><td>20,421.75</td><td>8.62</td><td>09:40</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>43</td><td>2025-03-31</td><td>09:41</td><td>LONG</td><td>19,035.50</td><td>19,058.25</td><td>19,012.75</td><td>22.75</td><td>09:43</td><td>TP +0.95R</td><td></td></tr>
+<tr><td>44</td><td>2025-04-01</td><td>10:02</td><td>LONG</td><td>19,356.12</td><td>19,374.25</td><td>19,338.00</td><td>18.12</td><td>10:03</td><td>TP +0.93R</td><td></td></tr>
+<tr><td>45</td><td>2025-04-02</td><td>09:53</td><td>LONG</td><td>19,545.38</td><td>19,560.50</td><td>19,530.25</td><td>15.12</td><td>09:53</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>46</td><td>2025-04-04</td><td>09:58</td><td>SHORT</td><td>18,218.50</td><td>18,188.00</td><td>18,249.00</td><td>30.50</td><td>09:58</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>47</td><td>2025-04-08</td><td>09:43</td><td>SHORT</td><td>18,162.12</td><td>18,122.00</td><td>18,202.25</td><td>40.12</td><td>09:43</td><td>TP +0.97R</td><td>SAME-BAR</td></tr>
+<tr><td>48</td><td>2025-04-10</td><td>09:39</td><td>SHORT</td><td>18,838.75</td><td>18,805.75</td><td>18,871.75</td><td>33.00</td><td>09:39</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>49</td><td>2025-04-11</td><td>09:38</td><td>LONG</td><td>18,382.62</td><td>18,414.25</td><td>18,351.00</td><td>31.62</td><td>09:38</td><td>TP +0.96R</td><td>SAME-BAR</td></tr>
+<tr><td>50</td><td>2025-04-14</td><td>09:49</td><td>SHORT</td><td>19,069.00</td><td>19,052.75</td><td>19,085.25</td><td>16.25</td><td>09:49</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>51</td><td>2025-04-22</td><td>09:58</td><td>SHORT</td><td>18,236.12</td><td>18,227.50</td><td>18,244.75</td><td>8.62</td><td>09:58</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>52</td><td>2025-04-25</td><td>09:47</td><td>LONG</td><td>19,274.00</td><td>19,292.25</td><td>19,255.75</td><td>18.25</td><td>09:47</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>53</td><td>2025-04-30</td><td>10:24</td><td>SHORT</td><td>19,288.38</td><td>19,272.00</td><td>19,304.75</td><td>16.38</td><td>10:24</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>54</td><td>2025-05-01</td><td>09:46</td><td>SHORT</td><td>19,960.38</td><td>19,942.75</td><td>19,978.00</td><td>17.62</td><td>09:46</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>55</td><td>2025-05-02</td><td>09:41</td><td>SHORT</td><td>20,113.75</td><td>20,102.25</td><td>20,125.25</td><td>11.50</td><td>09:41</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>56</td><td>2025-05-05</td><td>09:40</td><td>LONG</td><td>20,011.88</td><td>20,030.50</td><td>19,993.25</td><td>18.62</td><td>09:42</td><td>SL -1.07R</td><td></td></tr>
+<tr><td>57</td><td>2025-05-07</td><td>09:40</td><td>SHORT</td><td>19,910.00</td><td>19,898.75</td><td>19,921.25</td><td>11.25</td><td>09:40</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>58</td><td>2025-05-09</td><td>11:53</td><td>SHORT</td><td>20,165.88</td><td>20,159.75</td><td>20,172.00</td><td>6.12</td><td>11:53</td><td>TP +0.80R</td><td>SAME-BAR</td></tr>
+<tr><td>59</td><td>2025-05-12</td><td>09:46</td><td>LONG</td><td>20,760.88</td><td>20,775.50</td><td>20,746.25</td><td>14.62</td><td>09:46</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>60</td><td>2025-05-13</td><td>09:43</td><td>LONG</td><td>21,051.38</td><td>21,059.75</td><td>21,043.00</td><td>8.38</td><td>09:43</td><td>TP +0.85R</td><td>SAME-BAR</td></tr>
+<tr><td>61</td><td>2025-05-14</td><td>12:06</td><td>SHORT</td><td>21,396.62</td><td>21,387.75</td><td>21,405.50</td><td>8.88</td><td>12:06</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>62</td><td>2025-05-15</td><td>09:54</td><td>SHORT</td><td>21,309.88</td><td>21,293.00</td><td>21,326.75</td><td>16.88</td><td>09:55</td><td>TP +0.93R</td><td></td></tr>
+<tr><td>63</td><td>2025-05-16</td><td>09:39</td><td>SHORT</td><td>21,434.75</td><td>21,423.00</td><td>21,446.50</td><td>11.75</td><td>09:39</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>64</td><td>2025-05-20</td><td>09:38</td><td>SHORT</td><td>21,427.38</td><td>21,418.50</td><td>21,436.25</td><td>8.88</td><td>09:38</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>65</td><td>2025-05-28</td><td>09:47</td><td>LONG</td><td>21,501.75</td><td>21,513.25</td><td>21,490.25</td><td>11.50</td><td>09:47</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>66</td><td>2025-05-30</td><td>10:05</td><td>SHORT</td><td>21,341.00</td><td>21,327.75</td><td>21,354.25</td><td>13.25</td><td>10:05</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>67</td><td>2025-06-02</td><td>09:42</td><td>LONG</td><td>21,409.12</td><td>21,421.00</td><td>21,397.25</td><td>11.88</td><td>09:42</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>68</td><td>2025-06-04</td><td>09:51</td><td>LONG</td><td>21,740.88</td><td>21,749.75</td><td>21,732.00</td><td>8.88</td><td>09:51</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>69</td><td>2025-06-06</td><td>09:37</td><td>SHORT</td><td>21,805.50</td><td>21,790.25</td><td>21,820.75</td><td>15.25</td><td>09:37</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>70</td><td>2025-06-10</td><td>09:44</td><td>LONG</td><td>21,832.88</td><td>21,848.00</td><td>21,817.75</td><td>15.12</td><td>09:44</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>71</td><td>2025-06-11</td><td>09:42</td><td>LONG</td><td>21,971.00</td><td>21,983.25</td><td>21,958.75</td><td>12.25</td><td>09:42</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>72</td><td>2025-06-12</td><td>10:28</td><td>SHORT</td><td>21,925.88</td><td>21,921.00</td><td>21,930.75</td><td>4.88</td><td>10:28</td><td>TP +0.74R</td><td>SAME-BAR</td></tr>
+<tr><td>73</td><td>2025-06-13</td><td>09:50</td><td>SHORT</td><td>21,780.25</td><td>21,772.25</td><td>21,788.25</td><td>8.00</td><td>09:50</td><td>TP +0.84R</td><td>SAME-BAR</td></tr>
+<tr><td>74</td><td>2025-06-18</td><td>14:56</td><td>LONG</td><td>21,933.00</td><td>21,940.00</td><td>21,926.00</td><td>7.00</td><td>14:56</td><td>TP +0.82R</td><td>SAME-BAR</td></tr>
+<tr><td>75</td><td>2025-06-23</td><td>12:35</td><td>LONG</td><td>21,776.12</td><td>21,794.00</td><td>21,758.25</td><td>17.88</td><td>12:35</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>76</td><td>2025-06-24</td><td>10:08</td><td>LONG</td><td>22,276.38</td><td>22,293.00</td><td>22,259.75</td><td>16.62</td><td>10:08</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>77</td><td>2025-06-26</td><td>09:58</td><td>SHORT</td><td>22,538.50</td><td>22,531.00</td><td>22,546.00</td><td>7.50</td><td>09:58</td><td>TP +0.83R</td><td>SAME-BAR</td></tr>
+<tr><td>78</td><td>2025-06-27</td><td>13:56</td><td>LONG</td><td>22,698.00</td><td>22,711.00</td><td>22,685.00</td><td>13.00</td><td>13:56</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>79</td><td>2025-07-10</td><td>13:53</td><td>SHORT</td><td>23,035.25</td><td>23,027.25</td><td>23,043.25</td><td>8.00</td><td>13:54</td><td>time -0.28R</td><td></td></tr>
+<tr><td>80</td><td>2025-07-11</td><td>09:48</td><td>SHORT</td><td>22,927.75</td><td>22,919.50</td><td>22,936.00</td><td>8.25</td><td>09:48</td><td>TP +0.85R</td><td>SAME-BAR</td></tr>
+<tr><td>81</td><td>2025-07-14</td><td>10:16</td><td>SHORT</td><td>22,955.00</td><td>22,945.00</td><td>22,965.00</td><td>10.00</td><td>10:17</td><td>SL -1.12R</td><td></td></tr>
+<tr><td>82</td><td>2025-07-15</td><td>09:58</td><td>LONG</td><td>23,139.25</td><td>23,155.75</td><td>23,122.75</td><td>16.50</td><td>10:00</td><td>SL -1.08R</td><td></td></tr>
+<tr><td>83</td><td>2025-07-16</td><td>11:14</td><td>SHORT</td><td>23,042.75</td><td>23,034.75</td><td>23,050.75</td><td>8.00</td><td>11:14</td><td>TP +0.84R</td><td>SAME-BAR</td></tr>
+<tr><td>84</td><td>2025-07-23</td><td>11:52</td><td>SHORT</td><td>23,226.75</td><td>23,215.25</td><td>23,238.25</td><td>11.50</td><td>11:54</td><td>SL -1.11R</td><td></td></tr>
+<tr><td>85</td><td>2025-07-24</td><td>10:37</td><td>SHORT</td><td>23,358.62</td><td>23,352.50</td><td>23,364.75</td><td>6.12</td><td>10:37</td><td>TP +0.80R</td><td>SAME-BAR</td></tr>
+<tr><td>86</td><td>2025-07-28</td><td>09:40</td><td>LONG</td><td>23,476.62</td><td>23,485.25</td><td>23,468.00</td><td>8.62</td><td>09:40</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>87</td><td>2025-07-31</td><td>09:52</td><td>SHORT</td><td>23,673.00</td><td>23,658.25</td><td>23,687.75</td><td>14.75</td><td>09:52</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>88</td><td>2025-08-05</td><td>10:00</td><td>LONG</td><td>23,319.25</td><td>23,332.75</td><td>23,305.75</td><td>13.50</td><td>10:00</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>89</td><td>2025-08-07</td><td>09:42</td><td>LONG</td><td>23,607.12</td><td>23,620.50</td><td>23,593.75</td><td>13.38</td><td>09:42</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>90</td><td>2025-08-11</td><td>14:00</td><td>LONG</td><td>23,687.62</td><td>23,694.75</td><td>23,680.50</td><td>7.12</td><td>14:00</td><td>TP +0.82R</td><td>SAME-BAR</td></tr>
+<tr><td>91</td><td>2025-08-12</td><td>09:44</td><td>LONG</td><td>23,729.00</td><td>23,748.00</td><td>23,710.00</td><td>19.00</td><td>09:44</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>92</td><td>2025-08-13</td><td>09:51</td><td>SHORT</td><td>24,059.62</td><td>24,050.50</td><td>24,068.75</td><td>9.12</td><td>09:51</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>93</td><td>2025-08-15</td><td>10:14</td><td>SHORT</td><td>23,869.50</td><td>23,851.50</td><td>23,887.50</td><td>18.00</td><td>10:21</td><td>TP +0.93R</td><td></td></tr>
+<tr><td>94</td><td>2025-08-18</td><td>09:38</td><td>LONG</td><td>23,787.50</td><td>23,795.25</td><td>23,779.75</td><td>7.75</td><td>09:38</td><td>TP +0.84R</td><td>SAME-BAR</td></tr>
+<tr><td>95</td><td>2025-08-19</td><td>10:27</td><td>LONG</td><td>23,652.25</td><td>23,664.50</td><td>23,640.00</td><td>12.25</td><td>10:27</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>96</td><td>2025-08-21</td><td>09:49</td><td>SHORT</td><td>23,258.25</td><td>23,246.00</td><td>23,270.50</td><td>12.25</td><td>09:49</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>97</td><td>2025-08-25</td><td>09:56</td><td>SHORT</td><td>23,503.38</td><td>23,494.75</td><td>23,512.00</td><td>8.62</td><td>09:56</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>98</td><td>2025-08-26</td><td>09:40</td><td>SHORT</td><td>23,504.25</td><td>23,493.50</td><td>23,515.00</td><td>10.75</td><td>09:40</td><td>TP +0.88R</td><td>SAME-BAR</td></tr>
+<tr><td>99</td><td>2025-08-27</td><td>10:08</td><td>SHORT</td><td>23,556.38</td><td>23,547.75</td><td>23,565.00</td><td>8.62</td><td>10:08</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>100</td><td>2025-08-28</td><td>09:44</td><td>LONG</td><td>23,694.50</td><td>23,708.75</td><td>23,680.25</td><td>14.25</td><td>09:44</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>101</td><td>2025-09-02</td><td>11:50</td><td>LONG</td><td>23,041.25</td><td>23,057.50</td><td>23,025.00</td><td>16.25</td><td>11:56</td><td>TP +0.92R</td><td></td></tr>
+<tr><td>102</td><td>2025-09-03</td><td>10:01</td><td>SHORT</td><td>23,420.12</td><td>23,409.00</td><td>23,431.25</td><td>11.12</td><td>10:01</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>103</td><td>2025-09-08</td><td>13:05</td><td>LONG</td><td>23,787.88</td><td>23,804.25</td><td>23,771.50</td><td>16.38</td><td>13:11</td><td>TP +0.92R</td><td></td></tr>
+<tr><td>104</td><td>2025-09-10</td><td>09:37</td><td>LONG</td><td>23,942.38</td><td>23,953.25</td><td>23,931.50</td><td>10.88</td><td>09:37</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>105</td><td>2025-09-12</td><td>09:47</td><td>SHORT</td><td>24,039.12</td><td>24,030.75</td><td>24,047.50</td><td>8.38</td><td>09:47</td><td>TP +0.85R</td><td>SAME-BAR</td></tr>
+<tr><td>106</td><td>2025-09-15</td><td>09:44</td><td>LONG</td><td>24,443.62</td><td>24,450.75</td><td>24,436.50</td><td>7.12</td><td>09:44</td><td>TP +0.82R</td><td>SAME-BAR</td></tr>
+<tr><td>107</td><td>2025-09-16</td><td>09:44</td><td>SHORT</td><td>24,573.00</td><td>24,567.00</td><td>24,579.00</td><td>6.00</td><td>09:44</td><td>TP +0.79R</td><td>SAME-BAR</td></tr>
+<tr><td>108</td><td>2025-09-19</td><td>10:20</td><td>LONG</td><td>24,757.00</td><td>24,766.75</td><td>24,747.25</td><td>9.75</td><td>10:20</td><td>TP +0.87R</td><td>SAME-BAR</td></tr>
+<tr><td>109</td><td>2025-09-23</td><td>09:50</td><td>LONG</td><td>24,947.75</td><td>24,953.00</td><td>24,942.50</td><td>5.25</td><td>09:50</td><td>TP +0.76R</td><td>SAME-BAR</td></tr>
+<tr><td>110</td><td>2025-09-24</td><td>09:39</td><td>SHORT</td><td>24,848.12</td><td>24,839.50</td><td>24,856.75</td><td>8.62</td><td>09:39</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>111</td><td>2025-09-25</td><td>10:07</td><td>SHORT</td><td>24,552.75</td><td>24,544.25</td><td>24,561.25</td><td>8.50</td><td>10:07</td><td>TP +0.85R</td><td>SAME-BAR</td></tr>
+<tr><td>112</td><td>2025-09-29</td><td>09:55</td><td>LONG</td><td>24,930.62</td><td>24,940.00</td><td>24,921.25</td><td>9.38</td><td>09:55</td><td>TP +0.87R</td><td>SAME-BAR</td></tr>
+<tr><td>113</td><td>2025-09-30</td><td>09:43</td><td>SHORT</td><td>24,775.12</td><td>24,765.25</td><td>24,785.00</td><td>9.88</td><td>09:43</td><td>TP +0.87R</td><td>SAME-BAR</td></tr>
+<tr><td>114</td><td>2025-10-02</td><td>09:59</td><td>SHORT</td><td>25,062.38</td><td>25,053.00</td><td>25,071.75</td><td>9.38</td><td>09:59</td><td>TP +0.87R</td><td>SAME-BAR</td></tr>
+<tr><td>115</td><td>2025-10-03</td><td>09:55</td><td>LONG</td><td>25,122.38</td><td>25,131.50</td><td>25,113.25</td><td>9.12</td><td>09:55</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>116</td><td>2025-10-06</td><td>09:47</td><td>SHORT</td><td>25,170.00</td><td>25,156.50</td><td>25,183.50</td><td>13.50</td><td>09:48</td><td>TP +0.91R</td><td></td></tr>
+<tr><td>117</td><td>2025-10-07</td><td>09:58</td><td>LONG</td><td>25,237.62</td><td>25,244.75</td><td>25,230.50</td><td>7.12</td><td>09:58</td><td>TP +0.82R</td><td>SAME-BAR</td></tr>
+<tr><td>118</td><td>2025-10-08</td><td>09:44</td><td>LONG</td><td>25,119.00</td><td>25,127.00</td><td>25,111.00</td><td>8.00</td><td>09:44</td><td>TP +0.84R</td><td>SAME-BAR</td></tr>
+<tr><td>119</td><td>2025-10-13</td><td>09:47</td><td>SHORT</td><td>24,826.62</td><td>24,810.25</td><td>24,843.00</td><td>16.38</td><td>09:47</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>120</td><td>2025-10-14</td><td>09:49</td><td>SHORT</td><td>24,511.62</td><td>24,493.50</td><td>24,529.75</td><td>18.12</td><td>09:49</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>121</td><td>2025-10-15</td><td>09:43</td><td>LONG</td><td>24,939.62</td><td>24,952.75</td><td>24,926.50</td><td>13.12</td><td>09:43</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>122</td><td>2025-10-16</td><td>09:42</td><td>SHORT</td><td>25,077.38</td><td>25,068.25</td><td>25,086.50</td><td>9.12</td><td>09:42</td><td>TP +0.86R</td><td>SAME-BAR</td></tr>
+<tr><td>123</td><td>2025-10-22</td><td>10:12</td><td>LONG</td><td>25,235.25</td><td>25,246.75</td><td>25,223.75</td><td>11.50</td><td>10:13</td><td>SL -1.11R</td><td></td></tr>
+<tr><td>124</td><td>2025-10-27</td><td>09:51</td><td>LONG</td><td>25,810.75</td><td>25,825.25</td><td>25,796.25</td><td>14.50</td><td>09:51</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>125</td><td>2025-10-30</td><td>15:10</td><td>LONG</td><td>25,953.12</td><td>25,964.25</td><td>25,942.00</td><td>11.12</td><td>15:10</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>126</td><td>2025-11-05</td><td>09:37</td><td>SHORT</td><td>25,537.12</td><td>25,520.50</td><td>25,553.75</td><td>16.62</td><td>09:37</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>127</td><td>2025-11-06</td><td>09:38</td><td>SHORT</td><td>25,650.88</td><td>25,632.75</td><td>25,669.00</td><td>18.12</td><td>09:40</td><td>TP +0.93R</td><td></td></tr>
+<tr><td>128</td><td>2025-11-07</td><td>14:40</td><td>SHORT</td><td>25,068.38</td><td>25,047.25</td><td>25,089.50</td><td>21.12</td><td>14:40</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>129</td><td>2025-11-10</td><td>10:50</td><td>LONG</td><td>25,577.75</td><td>25,588.00</td><td>25,567.50</td><td>10.25</td><td>10:50</td><td>TP +0.88R</td><td>SAME-BAR</td></tr>
+<tr><td>130</td><td>2025-11-11</td><td>09:46</td><td>SHORT</td><td>25,621.75</td><td>25,615.50</td><td>25,628.00</td><td>6.25</td><td>09:46</td><td>TP +0.80R</td><td>SAME-BAR</td></tr>
+<tr><td>131</td><td>2025-11-13</td><td>10:12</td><td>SHORT</td><td>25,463.38</td><td>25,449.75</td><td>25,477.00</td><td>13.62</td><td>10:12</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>132</td><td>2025-11-18</td><td>09:41</td><td>LONG</td><td>24,700.62</td><td>24,737.00</td><td>24,664.25</td><td>36.38</td><td>09:41</td><td>TP +0.97R</td><td>SAME-BAR</td></tr>
+<tr><td>133</td><td>2025-11-19</td><td>12:26</td><td>LONG</td><td>24,591.88</td><td>24,611.50</td><td>24,572.25</td><td>19.62</td><td>12:26</td><td>TP +0.94R</td><td>SAME-BAR</td></tr>
+<tr><td>134</td><td>2025-11-21</td><td>09:52</td><td>SHORT</td><td>24,228.50</td><td>24,183.75</td><td>24,273.25</td><td>44.75</td><td>09:54</td><td>SL -1.03R</td><td></td></tr>
+<tr><td>135</td><td>2025-11-25</td><td>09:37</td><td>LONG</td><td>24,839.88</td><td>24,851.75</td><td>24,828.00</td><td>11.88</td><td>09:37</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>136</td><td>2025-12-03</td><td>09:55</td><td>SHORT</td><td>25,500.62</td><td>25,484.00</td><td>25,517.25</td><td>16.62</td><td>09:55</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>137</td><td>2025-12-04</td><td>10:38</td><td>SHORT</td><td>25,627.88</td><td>25,612.75</td><td>25,643.00</td><td>15.12</td><td>10:42</td><td>time -0.22R</td><td></td></tr>
+<tr><td>138</td><td>2025-12-05</td><td>09:52</td><td>SHORT</td><td>25,766.25</td><td>25,755.00</td><td>25,777.50</td><td>11.25</td><td>09:53</td><td>SL -1.11R</td><td></td></tr>
+<tr><td>139</td><td>2025-12-10</td><td>12:51</td><td>SHORT</td><td>25,659.75</td><td>25,647.00</td><td>25,672.50</td><td>12.75</td><td>12:52</td><td>TP +0.90R</td><td></td></tr>
+<tr><td>140</td><td>2025-12-11</td><td>10:22</td><td>SHORT</td><td>25,612.50</td><td>25,594.00</td><td>25,631.00</td><td>18.50</td><td>10:23</td><td>time -0.42R</td><td></td></tr>
+<tr><td>141</td><td>2025-12-15</td><td>09:38</td><td>LONG</td><td>25,586.00</td><td>25,600.50</td><td>25,571.50</td><td>14.50</td><td>09:38</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>142</td><td>2025-12-16</td><td>10:07</td><td>SHORT</td><td>25,394.75</td><td>25,380.25</td><td>25,409.25</td><td>14.50</td><td>10:07</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>143</td><td>2025-12-18</td><td>10:26</td><td>SHORT</td><td>25,317.75</td><td>25,305.75</td><td>25,329.75</td><td>12.00</td><td>10:26</td><td>TP +0.90R</td><td>SAME-BAR</td></tr>
+<tr><td>144</td><td>2025-12-26</td><td>10:20</td><td>SHORT</td><td>25,881.00</td><td>25,873.50</td><td>25,888.50</td><td>7.50</td><td>10:20</td><td>TP +0.83R</td><td>SAME-BAR</td></tr>
+<tr><td>145</td><td>2025-12-30</td><td>10:04</td><td>LONG</td><td>25,735.50</td><td>25,745.50</td><td>25,725.50</td><td>10.00</td><td>10:07</td><td>SL -1.12R</td><td></td></tr>
+<tr><td>146</td><td>2026-01-02</td><td>10:01</td><td>SHORT</td><td>25,779.38</td><td>25,754.75</td><td>25,804.00</td><td>24.62</td><td>10:02</td><td>TP +0.95R</td><td></td></tr>
+<tr><td>147</td><td>2026-01-06</td><td>09:44</td><td>SHORT</td><td>25,663.00</td><td>25,648.00</td><td>25,678.00</td><td>15.00</td><td>09:44</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>148</td><td>2026-01-07</td><td>10:01</td><td>LONG</td><td>25,815.38</td><td>25,833.00</td><td>25,797.75</td><td>17.62</td><td>10:01</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>149</td><td>2026-01-09</td><td>09:49</td><td>LONG</td><td>25,676.38</td><td>25,691.00</td><td>25,661.75</td><td>14.62</td><td>09:49</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>150</td><td>2026-01-12</td><td>09:40</td><td>LONG</td><td>25,862.62</td><td>25,872.25</td><td>25,853.00</td><td>9.62</td><td>09:40</td><td>TP +0.87R</td><td>SAME-BAR</td></tr>
+<tr><td>151</td><td>2026-01-13</td><td>09:51</td><td>LONG</td><td>25,950.62</td><td>25,966.00</td><td>25,935.25</td><td>15.38</td><td>09:51</td><td>TP +0.92R</td><td>SAME-BAR</td></tr>
+<tr><td>152</td><td>2026-01-20</td><td>09:40</td><td>LONG</td><td>25,269.00</td><td>25,304.50</td><td>25,233.50</td><td>35.50</td><td>09:42</td><td>TP +0.96R</td><td></td></tr>
+<tr><td>153</td><td>2026-01-21</td><td>09:43</td><td>SHORT</td><td>25,201.50</td><td>25,183.00</td><td>25,220.00</td><td>18.50</td><td>09:43</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>154</td><td>2026-01-22</td><td>11:25</td><td>SHORT</td><td>25,678.62</td><td>25,662.00</td><td>25,695.25</td><td>16.62</td><td>11:35</td><td>TP +0.92R</td><td></td></tr>
+<tr><td>155</td><td>2026-01-23</td><td>09:42</td><td>SHORT</td><td>25,635.50</td><td>25,618.25</td><td>25,652.75</td><td>17.25</td><td>09:42</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>156</td><td>2026-01-28</td><td>10:10</td><td>LONG</td><td>26,224.50</td><td>26,235.50</td><td>26,213.50</td><td>11.00</td><td>10:10</td><td>TP +0.89R</td><td>SAME-BAR</td></tr>
+<tr><td>157</td><td>2026-01-29</td><td>09:52</td><td>LONG</td><td>25,931.25</td><td>25,952.25</td><td>25,910.25</td><td>21.00</td><td>09:53</td><td>SL -1.06R</td><td></td></tr>
+<tr><td>158</td><td>2026-01-30</td><td>09:38</td><td>SHORT</td><td>25,889.75</td><td>25,875.75</td><td>25,903.75</td><td>14.00</td><td>09:38</td><td>TP +0.91R</td><td>SAME-BAR</td></tr>
+<tr><td>159</td><td>2026-02-10</td><td>09:54</td><td>SHORT</td><td>25,367.38</td><td>25,356.75</td><td>25,378.00</td><td>10.62</td><td>09:54</td><td>TP +0.88R</td><td>SAME-BAR</td></tr>
+<tr><td>160</td><td>2026-02-13</td><td>10:11</td><td>SHORT</td><td>24,831.62</td><td>24,813.50</td><td>24,849.75</td><td>18.12</td><td>10:11</td><td>TP +0.93R</td><td>SAME-BAR</td></tr>
+<tr><td>161</td><td>2026-02-17</td><td>11:23</td><td>SHORT</td><td>24,794.12</td><td>24,772.25</td><td>24,816.00</td><td>21.88</td><td>11:26</td><td>TP +0.94R</td><td></td></tr>
+<tr><td>162</td><td>2026-02-19</td><td>09:45</td><td>LONG</td><td>24,785.50</td><td>24,808.25</td><td>24,762.75</td><td>22.75</td><td>09:45</td><td>TP +0.95R</td><td>SAME-BAR</td></tr>
+<tr><td>163</td><td>2026-02-24</td><td>10:21</td><td>SHORT</td><td>24,929.50</td><td>24,918.75</td><td>24,940.25</td><td>10.75</td><td>10:21</td><td>TP +0.88R</td><td>SAME-BAR</td></tr>
+</tbody></table>
+<hr>
+<p>*Education and research documentation only — not investment advice, not</p>
+<p>a signal service. These are hypothetical backtest results on historical</p>
+<p>data; they do not represent actual trading, and past performance does</p>
+<p>not guarantee future results. Sample sizes are stated next to every</p>
+<p>number.*</p>
+<p><em>The Pearl Trader — ICT concepts, defined precisely and backtested honestly.</em></p>
+</body></html>
